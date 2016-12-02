@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="900.0" styleClass="flat-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerDifInt">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane minWidth="350.0" prefHeight="200.0" prefWidth="500.0">
+               <children>
+                  <VBox fx:id="inputContainerA" layoutX="20.0" layoutY="20.0" prefHeight="446.0" prefWidth="415.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" layoutX="18.0" layoutY="110.0" prefHeight="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="110.0">
+                           <content>
+                              <VBox fx:id="inputContainerR" prefWidth="400.0" styleClass="inputContainerR" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <Region HBox.hgrow="ALWAYS" />
+            <AnchorPane minWidth="400.0" prefHeight="200.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="solucionLabel" layoutX="35.0" layoutY="393.0" prefHeight="53.0" prefWidth="400.0" styleClass="solucion-label" textFill="#2c3e50" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <StackPane fx:id="graphContainer" layoutX="32.0" layoutY="81.0" prefHeight="308.0" prefWidth="400.0" styleClass="grafica" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="71.0" />
+                  <Label layoutX="38.0" layoutY="13.0" prefHeight="50.0" prefWidth="400.0" text="Grafica" textFill="#2c3e50" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <TableView id="tabla" fx:id="tablaGraficas" layoutY="530.0" maxHeight="-Infinity" prefHeight="276.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="462.0" />
+   </children>
+</AnchorPane>

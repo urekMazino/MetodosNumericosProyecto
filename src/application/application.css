@@ -1,0 +1,197 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#main{
+	-fx-background-color:#FCFCFC;
+}
+
+.title-bar{
+	-fx-background-color:#2980b9;
+}
+.title-bar Label{
+	-fx-font-family:"Montserrat Light";
+	-fx-text-fill: #ecf0f1;
+}
+#menuTitulo{
+	-fx-text-fill:#FCFCFC;
+}
+
+
+.table-view {
+  -fx-background-color: transparent;
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.table-view .column-header-background {
+    -fx-text-fill: #FCFCFC;
+    -fx-font-size:16;
+}
+.table-cell{
+	-fx-font-weight:bold;
+}
+.table-view .column-header-background{
+	-fx-background-color:#2980b9;
+	-fx-border-color:#FCFCFC;
+	-fx-border-width: 0px 1px 0px 0px;	
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.table-view .column-header .label {
+    -fx-alignment: CENTER_LEFT;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+#tabla .filler{
+	-fx-background-color:#2980b9;
+}
+.grafica{
+	-fx-background-color:white;
+	-fx-border-width:3px;
+	-fx-border-color:#2980b9;
+  	-fx-border-radius: 12;
+  	-fx-background-radius: 12;
+}
+.solucion-label{
+	-fx-border-color:#1abc9c;
+	-fx-border-width:3px;
+  	-fx-border-radius: 5;
+  	-fx-background-radius: 5;
+}
+.input-boton-enviar{
+	-fx-font-size:18px;
+	-fx-font-weight:bold;
+	-fx-background-color:#2ecc71;
+	-fx-text-fill:#FCFCFC;
+}
+.input-boton-enviar:hover{
+	-fx-background-color:#27ae60;
+}
+.input-error{
+	-fx-font-size:16px;
+	-fx-text-fill:#e74c3c;
+}
+.input-title{
+	-fx-font-family:"Montserrat Light";
+	-fx-font-size:22px;
+	-fx-text-fill:#2C3E50;
+}
+
+.wrong{
+	-fx-background-color: #c0392b, #FCFCFC ,#FCFCFC !important;
+}
+.right{
+	-fx-background-color: #27ae60, #FCFCFC ,#FCFCFC !important;
+}
+
+.input-textfield{
+	-fx-background-color: #2980b9, #FCFCFC ,#FCFCFC;
+    -fx-background-insets: 0 -3 -3 -3, 0 0 0 0, 0 -3 6 -3;
+    -fx-background-radius:0;
+	-fx-font-size:16px;
+	-fx-text-fill:#34495e;
+	-fx-font-weight:bold;
+	-fx-border: none;
+}
+.wrong:focused{
+	-fx-focus-color: transparent;
+	-fx-background-color: #8e44ad, #ecf0f1 ,#ecf0f1 !important;
+}
+.right:focused{
+	-fx-focus-color: transparent;
+	-fx-background-color: #8e44ad, #ecf0f1 ,#ecf0f1 !important;
+}
+.input-textfield:focused{
+	-fx-focus-color: transparent;
+	-fx-background-color: #8e44ad,  #ecf0f1 ,#ecf0f1;
+}
+
+.side-menu-label1{
+	-fx-font-family:"Montserrat Ultra Light";
+	-fx-background-color: #2c3e50;
+    -fx-text-fill: #FCFCFC;
+    -fx-font-size:32;
+    -fx-text-alignment:left;
+    -fx-padding:16 0.0 16 40;
+}
+.side-menu-label1:hover{
+    -fx-background-color: #34495e;
+	-fx-text-fill: white;
+}
+.side-menu-label2 {
+	-fx-background-color: #34495e;
+	-fx-font-family:"Montserrat Ultra Light";
+    -fx-text-fill: #FCFCFC;
+    -fx-font-size:26;
+    -fx-text-alignment:left;
+    -fx-padding:16 0.0 16 40;
+}
+.side-menu-label2:hover{
+    -fx-background-color: #3D5974;
+    -fx-text-fill:white;
+}
+.side-menu1{
+	-fx-background-color:#2c3e50;
+}
+.side-menu2{
+	-fx-background-color: #34495e;
+}
+.input-boton-regresar{
+	-fx-font-size:22px;
+	-fx-font-weight:bold;
+	-fx-background-color:#2ecc71;
+	-fx-text-fill:#FCFCFC;
+}
+.solucion-label-inner{
+	-fx-font-size:26;
+	-fx-padding:2,00,4,00;
+	-fx-background-color:transparent;
+}
+ScrollPane > .viewport {
+   -fx-background-color: transparent;
+}
+ScrollPane{
+	-fx-background-color:transparent;
+}
+.flat-background{
+	-fx-background-color:#FCFCFC;
+}
+.input-matriz-texfield {
+    -fx-border-insets: 0 25 0 0;
+    -fx-background-insets: 0 25 0 0;
+}
+.output-matriz-label{
+	-fx-font-family:"Montserrat Light";
+	-fx-font-size:22px;
+	-fx-padding:0 25 0 0;
+}
+.output-matriz-label-small{
+	-fx-font-size:16px;
+}
+.output-matriz-label-med{
+	-fx-font-size:19px;
+}
+}
+.output-matriz-label-med-bold{
+	-fx-font-weight:bold;
+	-fx-font-size:19px;
+}
+.matrix-row{
+	-fx-padding:0 0 20 0;
+}
+.larger-title{
+	-fx-font-size:30px !important;
+}
+.info{
+	-fx-font-family:"Montserrat Light";
+	-fx-font-size:28px;
+}
+.label-titulo{
+	-fx-padding:5 0 0 0;
+	-fx-font-size:36px;
+	-fx-font-family:"Montserrat Light";
+	-fx-text-fill:#34495e;
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="900.0" styleClass="flat-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerDifInt">
+   <children>
+      <HBox prefWidth="900.0" styleClass="flat-background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane minWidth="450.0" prefWidth="450.0">
+               <children>
+                  <VBox fx:id="inputContainerA" layoutX="20.0" layoutY="20.0" prefWidth="415.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="20.0">
+                     <children>
+                        <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" layoutX="18.0" layoutY="110.0" prefWidth="435.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="110.0">
+                           <content>
+                              <VBox fx:id="inputContainerR" prefWidth="400.0" styleClass="inputContainerR" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane minWidth="400.0" prefWidth="600.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox fx:id="rightPane" layoutX="25.0" layoutY="13.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <VBox fillWidth="false" minWidth="400.0" prefWidth="600.0">
+                           <children>
+                              <Label minWidth="400.0" prefHeight="50.0" prefWidth="600.0" text="Grafica" textFill="#2c3e50" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="22.0">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Label>
+                              <StackPane fx:id="graphContainer" layoutY="50.0" minWidth="400.0" prefHeight="308.0" prefWidth="600.0" styleClass="grafica" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="71.0">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </StackPane>
+                           </children>
+                        </VBox>
+                        <Label fx:id="solucionLabel" layoutX="25.0" layoutY="393.0" minWidth="400.0" prefHeight="53.0" prefWidth="600.0" styleClass="solucion-label" textFill="#2c3e50" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TableView id="tabla" fx:id="tablaGraficas" prefHeight="200.0" prefWidth="400.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

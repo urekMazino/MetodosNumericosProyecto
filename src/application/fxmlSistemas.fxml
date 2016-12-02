@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AP" prefHeight="738.0" prefWidth="900.0" styleClass="flat-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerSis">
+   <children>
+      <VBox fx:id="inputContainerA" prefHeight="738.0" prefWidth="906.0" styleClass="flat-background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ScrollPane fx:id="scrollPane" prefWidth="916.0" styleClass="flat-background" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox fx:id="inputContainerB" styleClass="inputContainerR">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding></VBox>
+               </content>
+            </ScrollPane>
+            <HBox prefWidth="906.0">
+               <children>
+                  <Button mnemonicParsing="false" onMouseClicked="#Enviar" styleClass="input-boton-regresar" text=" calcular ">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="25.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+      <VBox fx:id="solucionMatriz" prefHeight="738.0" prefWidth="906.0" styleClass="flat-background" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ScrollPane prefWidth="906.0" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox fx:id="solucionMatrizContainer" styleClass="inputContainerR" />
+               </content>
+            </ScrollPane>
+            <HBox fx:id="regresarBarra" fillHeight="false" prefWidth="906.0" styleClass="flat-background">
+               <children>
+                  <Button mnemonicParsing="false" onMouseClicked="#Regresar" styleClass="input-boton-regresar" text=" Regresar ">
+                     <HBox.margin>
+                        <Insets bottom="8.0" right="14.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <ScrollPane prefHeight="62.0" prefWidth="200.0" styleClass="solucion-label" vbarPolicy="NEVER" HBox.hgrow="ALWAYS">
+                     <content>
+                        <Label fx:id="solucionLabel" styleClass="solucion-label-inner">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                     </content>
+                     <HBox.margin>
+                        <Insets top="4.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="6.0" />
+                     </padding>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

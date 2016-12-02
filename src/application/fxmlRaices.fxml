@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="900.0" styleClass="flat-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerRaices">
+   <children>
+      <HBox maxWidth="450.0" prefHeight="400.0" prefWidth="900.0" styleClass="flat-background" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane minWidth="350.0" prefHeight="200.0" prefWidth="500.0">
+               <children>
+                  <VBox fx:id="inputContainerR" layoutX="20.0" prefHeight="150.0" prefWidth="411.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <Region prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <AnchorPane minWidth="400.0" prefHeight="200.0" prefWidth="600.0" style="-fx-background-color: transparent;">
+               <children>
+                  <Label layoutX="28.0" layoutY="13.0" prefHeight="50.0" prefWidth="400.0" text="Grafica" textFill="#2c3e50" AnchorPane.leftAnchor="28.0">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <StackPane fx:id="graphContainer" layoutX="22.0" layoutY="71.0" prefHeight="308.0" prefWidth="400.0" styleClass="grafica" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="71.0" />
+                  <Label fx:id="solucionLabel" layoutX="25.0" layoutY="393.0" prefHeight="53.0" prefWidth="400.0" styleClass="solucion-label" textFill="#2c3e50" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <TableView id="tabla" fx:id="tablaGraficas" layoutY="530.0" prefWidth="900.0" styleClass="flat-background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="462.0" />
+   </children>
+</AnchorPane>

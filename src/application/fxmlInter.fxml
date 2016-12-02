@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="900.0" styleClass="flat-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerInter">
+   <children>
+      <HBox prefHeight="650.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane minWidth="500.0" prefWidth="600.0">
+               <children>
+                  <VBox fx:id="inputContainerA" layoutX="20.0" layoutY="20.0" prefHeight="685.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+                     <children>
+                        <ScrollPane fx:id="scrollPane" layoutX="18.0" layoutY="110.0" prefWidth="425.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="110.0" VBox.vgrow="ALWAYS">
+                           <content>
+                              <VBox fx:id="inputContainerR" prefWidth="400.0" styleClass="inputContainerR">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding></VBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <VBox fx:id="solucionInter" layoutX="10.0" layoutY="10.0" prefHeight="650.0" prefWidth="906.0" styleClass="flat-background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox VBox.vgrow="ALWAYS">
+               <children>
+                  <ScrollPane prefWidth="906.0" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+                     <content>
+                        <VBox fx:id="solucionInterContainer" styleClass="inputContainerR" />
+                     </content>
+                  </ScrollPane>
+                  <AnchorPane minWidth="450.0" prefWidth="450.0">
+                     <children>
+                        <VBox fx:id="graphPaneContainer" layoutX="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox fx:id="graphPane">
+                                 <children>
+                                    <Label prefHeight="50.0" prefWidth="400.0" text="Grafica" textFill="#2c3e50" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="22.0">
+                                       <font>
+                                          <Font size="34.0" />
+                                       </font>
+                                    </Label>
+                                    <StackPane fx:id="graphContainer" layoutY="50.0" prefHeight="308.0" prefWidth="400.0" styleClass="grafica" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="71.0" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="solucionContainer">
+                                 <children>
+                                    <Label prefWidth="100000.0" text="Solucion" textFill="#2c3e50">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="solucionLabel" layoutY="50.0" prefWidth="1000000.0" styleClass="solucion-label" textFill="#2c3e50" wrapText="true" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+                                       <font>
+                                          <Font size="26.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox fx:id="regresarBarra" fillHeight="false" prefWidth="906.0" styleClass="flat-background">
+               <children>
+                  <Button mnemonicParsing="false" onMouseClicked="#Regresar" styleClass="input-boton-regresar" text=" Regresar ">
+                     <HBox.margin>
+                        <Insets bottom="8.0" right="14.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
