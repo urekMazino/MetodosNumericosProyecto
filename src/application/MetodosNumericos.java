@@ -38,7 +38,7 @@ public class MetodosNumericos{
 	}
 
 	
-
+	//BISECCION
 	public ObservableList<Iteracion> BI(double a,double b,Label res){
 		ObservableList<Iteracion> lista = FXCollections.observableArrayList();
 		double xm,error;
@@ -82,6 +82,7 @@ public class MetodosNumericos{
 		return lista;
 	}
 	
+	//FALSA POSICION
 	public  ObservableList<Iteracion> FP(double a,double b,Label res){
 		ObservableList<Iteracion> lista = FXCollections.observableArrayList();
 		
@@ -126,6 +127,7 @@ public class MetodosNumericos{
 		return lista;
 	}
 	
+	//SECANTE
 	public ObservableList<Iteracion> SE(double a,double b,Label res){
 		ObservableList<Iteracion> lista = FXCollections.observableArrayList();
 		
@@ -165,7 +167,7 @@ public class MetodosNumericos{
 		res.setText("No se encontro en 50 iter.");
 		return lista;
 	}
-		
+		//NEWTON RHAPSON
 	public ObservableList<Iteracion> NR(double a,Label res){
 		ObservableList<Iteracion> lista = FXCollections.observableArrayList();
 		double xm,error;
@@ -199,6 +201,7 @@ public class MetodosNumericos{
 		return lista;
 	}
 	
+	//APROXIMACIONES SUCESIVAS
 	public ObservableList<Iteracion> AS(double a,Label res){
 		ObservableList<Iteracion> lista = FXCollections.observableArrayList();
 		double xm,error=0,deltaError=0;
@@ -236,6 +239,8 @@ public class MetodosNumericos{
 		res.setText("El Metodo Diverge.");
 		return lista;
 	}
+	
+	//NEWTON SEGUNDO ORDEN
 	public ObservableList<Iteracion> N20(double a,Label res){
 		ObservableList<Iteracion> lista = FXCollections.observableArrayList();
 		double xm,error;
@@ -269,7 +274,7 @@ public class MetodosNumericos{
 		return lista;
 	}
 	
-	
+	//GAUSS
 	public double[][] Gauss(Label res){
 
 			double[][] M = new double[Matriz.length][];
@@ -284,6 +289,7 @@ public class MetodosNumericos{
 		
 	}
 
+	//GAUSS JORDAN
 	public double[][] GaussJordan(Label res){
 
 		double[][] M = new double[Matriz.length][];
@@ -295,6 +301,7 @@ public class MetodosNumericos{
 		return M;
 	}
 
+	//CRAMER
 	public double[] Cramer(Label res){
 
 			double det = Determinant(Matriz);
@@ -317,6 +324,7 @@ public class MetodosNumericos{
 
 	}
 	
+	//MONTANTE
 	public double[][] Montante(Label res){
 
 		double det = Determinant(Matriz);
@@ -352,6 +360,7 @@ public class MetodosNumericos{
 
 	}
 	
+	//JACOBI
 	public ArrayList<double[]> Jacobi(Label res){
 			double[][] M = new double[Matriz.length][];
 			M =CopiarMatriz(); 
@@ -398,6 +407,7 @@ public class MetodosNumericos{
 			return iteracionesTabla;
 	}
 	
+	//GAUSS SEIDEL
 	public ArrayList<double[]> GaussSeidel(Label res){
 			//ALGORITMO
 			double[][] M = new double[Matriz.length][];
@@ -452,6 +462,10 @@ public class MetodosNumericos{
 			return iteracionesTabla;
 	}
 
+	
+	
+	
+	//DIFERENCIAS FINITAS INTERPOLACION
 	public String IDF(VBox contenedor,double valorB,Label res){
 		double[][] diferencias= new double[valoresx.length-1][valoresx.length-1]; 
 		//Guarda la tabla de diferencias ne la matriz "diferencias" y regresa la potencia de la funcion.
@@ -502,6 +516,8 @@ public class MetodosNumericos{
 		return (strDisplay);
 	}
 
+	
+	//INTERPOLACION NEWTON
 	public String IN(double xBuscado,VBox contenedor){
 
 		
@@ -557,6 +573,8 @@ public class MetodosNumericos{
 		return("f("+df.format(xBuscado)+") = "+df.format(res));
 	}
 	
+	
+	//INTERPOLACION LAGRANGE
 	public String IL(double x,VBox contenedor){
 		//LECTURA E INICIALIZACION DE VALORES
 		double suma =0;
@@ -598,6 +616,7 @@ public class MetodosNumericos{
 		return ("f("+df.format(x)+") = "+df.format(suma));
 	}
 	
+	//INTERPOLACION MINIMOS CRUADRADOS
 	public String IMC(int m,double valorB,VBox contenedor,Label res){
 		int n = m+1;
 		double[] a = new double[(m*2)+1];
@@ -674,6 +693,7 @@ public class MetodosNumericos{
 		return(strDisplay);
 	}
 	
+	//DIFERENCIACION POR LIMITES
 	public ObservableList<Iteracion> DDF(double x,Label res){
 		ObservableList<Iteracion> lista = FXCollections.observableArrayList();
 		int n = 1;
@@ -698,6 +718,7 @@ public class MetodosNumericos{
 		return lista;
 	}
 
+	//INTEGRACION TRAPECIO
 	public ObservableList<Iteracion> IT(double a, double b, int n,Label res){
 		ObservableList<Iteracion> lista = FXCollections.observableArrayList();
 		double x=a;
@@ -716,7 +737,7 @@ public class MetodosNumericos{
 		res.setText("Area="+(area*(h/2)));
 		return lista;
 	}
-	
+	//INTEGRACION TRAPECIO CON TABLA
 	public ObservableList<Iteracion>  ITtabla(double h,Label res){
 		ObservableList<Iteracion> lista = FXCollections.observableArrayList();
 		int n = valoresy2.length;
@@ -730,6 +751,7 @@ public class MetodosNumericos{
 		return lista;
 	}
 	
+	//INTEGRACION SIMPSON POR FUNCION
 	public ObservableList<Iteracion> IS(double a, double b, int n,Label res){
 		ObservableList<Iteracion> lista = FXCollections.observableArrayList();
 		double x=a;
@@ -749,6 +771,7 @@ public class MetodosNumericos{
 		return lista;
 	}
 
+	//INTEGRACION SIMPSON POR TABLA
 	public ObservableList<Iteracion> IStabla(double h,Label res){
 		ObservableList<Iteracion> lista = FXCollections.observableArrayList();
 		double area = 0;
@@ -761,6 +784,7 @@ public class MetodosNumericos{
 		return lista;
 	}
 	
+	//ECUACIONES DIFERENCIALES EULER
 	public ObservableList<Iteracion> ME(double x,double y,double n,double h,Label res){
 		ObservableList<Iteracion> lista = FXCollections.observableArrayList();
 		double sol = 0;
@@ -776,6 +800,7 @@ public class MetodosNumericos{
 		return lista;		
 	}
 
+	//ECUACIONES DIFERENCIALES EULER-GAUSS	
 	public ObservableList<Iteracion> MEG(double x,double y,double n,double h,Label res){
 		ObservableList<Iteracion> lista = FXCollections.observableArrayList();
 		double sol = 0;
@@ -792,6 +817,7 @@ public class MetodosNumericos{
 		return lista;		
 	}
 	
+	//NO SE QUE ES ESTO JAJAJA
 	public String IDFnoG(double valorB){
 		double[][] diferencias= new double[valoresx.length-1][valoresx.length-1]; 
 		//Guarda la tabla de diferencias ne la matriz "diferencias" y regresa la potencia de la funcion.
